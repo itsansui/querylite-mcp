@@ -1,0 +1,54 @@
+{
+  "name": "querylite-mcp",
+  "version": "0.1.0",
+  "description": "通过 MCP 为 Agent 提供本地 SQLite 查询、增删改查和事务能力。",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "querylite-mcp": "dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "docs",
+    "examples",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "pretest": "npm run build",
+    "test": "tsx --test tests/*.test.ts",
+    "test:integration": "npm run build && tsx --test tests/mcp.test.ts",
+    "test:package": "npm pack && node scripts/smoke-package.mjs",
+    "check": "npm run typecheck && npm test",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "sqlite",
+    "database",
+    "agent",
+    "model-context-protocol"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.3.1",
+    "@types/node": "^22.19.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

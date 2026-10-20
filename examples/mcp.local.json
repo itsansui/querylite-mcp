@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "sqlite": {
+      "command": "npx",
+      "args": [
+        "--yes",
+        "--package",
+        "D:/projects/querylite-mcp/querylite-mcp-0.1.0.tgz",
+        "querylite-mcp",
+        "--db",
+        "D:/data/app.sqlite",
+        "--allow-write",
+        "--create"
+      ]
+    }
+  }
+}
