@@ -335,3 +335,9 @@ npm publish --access public
 ```
 
 本项目提供了发布所需的可执行入口、类型声明、文件白名单和许可证；当前实现未执行 npm 发布。
+
+## 联系方式
+
+谷歌邮箱：fhlcoder@gmail.com
+
+网易邮箱：itsansui@163.com
