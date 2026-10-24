@@ -335,6 +335,7 @@ npm publish --access public
 ```
 
 本项目提供了发布所需的可执行入口、类型声明、文件白名单和许可证；当前实现未执行 npm 发布。
+[![M8ven Score](https://m8ven.ai/badge/mcp/itsansui-querylite-mcp-pwo1m2?v=8cef36ed7c62dc4c93358dbe57415be4)](https://m8ven.ai/mcp/itsansui-querylite-mcp-pwo1m2?s=readme)
 
 ## 联系方式
 
